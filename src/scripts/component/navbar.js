@@ -21,14 +21,6 @@ class NavigationElement extends HTMLElement {
       </header>
     `;
   }
-
-  connectedCallback() {
-    DrawerInitiator.init({
-      button: this.querySelector('#hamburgerButton'),
-      drawer: this.querySelector('#navigationDrawer'),
-      content: document.querySelector('#main-content'),
-    });
-  }
 }
 
 customElements.define('navigation-element', NavigationElement);
