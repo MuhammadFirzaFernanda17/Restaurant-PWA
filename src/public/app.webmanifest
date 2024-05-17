@@ -1,0 +1,30 @@
+{
+    "id": "restaurant-apps-starter-project_PWA",
+    "start_url": "./index.html",
+    "name": "Foodies Hunt",
+    "short_name": "FoodHunt",
+    "description": "Eksplorasi restaurant",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#D84315",
+    "icons": [
+      {
+        "src": "/icon/icon1.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/icon2.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/icons/icon3.png",
+        "sizes": "72x72",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  }

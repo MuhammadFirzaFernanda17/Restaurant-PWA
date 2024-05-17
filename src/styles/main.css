@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/*
+Loading
+*/
+
+#loading-indicator {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#error-message {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: red;
+}
+
+/*
+  AppBar
+*/
+ 
+.app-bar {
+  padding: 8px 16px;
+  background-color: #0d6efd;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: #db0000;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: #0d6efd;
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+
+}
+
+.app-bar__navigation ul li a:hover {
+  background-color: #db0000;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*
+  Hero/Jumbotron
+*/
+
+.hero {
+  background-image: url('../public/images/heros/hero-image_4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-text h1, .hero-text h2 {
+  pointer-events: none;
+  text-align: center;
+  color: #F5F5F5;
+  text-shadow: -1.5px -1.5px 0 #000,  
+               1.5px -1.5px 0 #000,
+              -1.5px 1.5px 0 #000,
+               1.5px 1.5px 0 #000;  
+}
+
+.hero-text h1 {
+  font-size: 36px;
+}
+
+.hero-text h3 {
+  font-size: 24px;
+}
+
+.hero-text a {
+  text-decoration: none; 
+  color: white;
+  border: 2px solid whitesmoke;
+  padding: 10px 20px;
+  transition: .3;
+  text-align: center;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px
+}
+
+.hero-text a:hover {
+  background-color: red;
+  border: 2px solid red;
+  transition: background-color 0.3s;
+}
+
+/*
+  Main Content
+*/
+ 
+.list_item {
+  border: 1px solid black;
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+
+.list_item_thumb {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.list_item_content {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.list_item_title {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 24px;
+  color: #666; 
+  text-decoration: none; 
+}
+
+.list_item_title:hover,
+.list_item_title:focus {
+ font-size: 30px;
+ color: #000;
+ transition: font-size 0.3s;
+}   
+
+.list_item_rating {
+  color: #333;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 7.5px;
+  font-size: 20px;
+}
+
+.list_item_rating_value{
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: bold;
+}
+
+.city {
+  min-width: 25px;
+  min-height: 25px;
+  font-style: italic;
+  color: #666;
+}
+
+.list_item_desc {
+  font-size: 16px; 
+  color: #555; 
+}
+
+/*
+  Detail Page
+*/
+
+.restaurant-detail {
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 7%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.restaurant-detail__name {
+  text-align: center;
+  background-color: #435585;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.restaurant-detail__image {
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.restaurant-detail__info {
+  flex-grow: 1;
+}
+
+.restaurant-detail__info h4 {
+  font-weight: bold;
+}
+
+.restaurant-detail__menu {
+  display: flex;
+}
+
+.restaurant-detail__menu ul {
+  flex-grow: 1;
+}
+
+.restaurant-detail__menu h5 {
+  margin-top: 0;
+}
+
+.restaurant-detail__menu h5 + ul {
+  margin-top: 10px;
+}
+
+.restaurant-detail__menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.restaurant-detail__menu ul li {
+  margin-bottom: 5px;
+}
+
+.restaurant-detail__menu::after {
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+
+.restaurant-detail__reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 2%;
+}
+
+.review {
+  background-color: #435585;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/*
+  Like
+*/
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/*
+  Footer
+*/
+ 
+footer {
+  padding: 16px;
+}
+ 
+footer p {
+  text-align: center;
+  color: #aaaaaa;
+}
+ 
+footer p a {
+  color: #db0000;
+  text-decoration: none;
+}
+
+/*
+  Skip to Content
+*/
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip-link:focus {
+   top: 0;
+}
