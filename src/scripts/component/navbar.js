@@ -1,5 +1,3 @@
-import DrawerInitiator from '../utils/drawer-initiator';
-
 class NavigationElement extends HTMLElement {
   constructor() {
     super();

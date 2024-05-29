@@ -3,9 +3,9 @@
   margin: 0;
   text-decoration: none;
 }
- 
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -47,7 +47,7 @@ Loading
 /*
   AppBar
 */
- 
+
 .app-bar {
   padding: 8px 16px;
   background-color: #0d6efd;
@@ -59,12 +59,12 @@ Loading
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
- 
+
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
 }
- 
+
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
@@ -74,19 +74,19 @@ Loading
   height: 44px;
   width: 44px;
 }
- 
+
 .app-bar .app-bar__brand {
   display: flex;
   align-items: center;
 }
- 
+
 .app-bar .app-bar__brand h1 {
   color: #db0000;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
 }
- 
+
 .app-bar .app-bar__navigation {
   position: absolute;
   top: 50px;
@@ -97,11 +97,11 @@ Loading
   background-color: #0d6efd;
   overflow: hidden;
 }
- 
+
 .app-bar .app-bar__navigation.open {
   left: 0;
 }
- 
+
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
@@ -109,7 +109,6 @@ Loading
   padding: 15px;
   margin-bottom: 5px;
   width: 100%;
-
 }
 
 .app-bar__navigation ul li a:hover {
@@ -123,7 +122,7 @@ Loading
 */
 
 .hero {
-  background-image: url('../public/images/heros/hero-image_4.jpg');
+  background-image: url("../public/images/heros/hero-image_4.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -135,14 +134,13 @@ Loading
   margin-bottom: 20px;
 }
 
-.hero-text h1, .hero-text h2 {
+.hero-text h1,
+.hero-text h2 {
   pointer-events: none;
   text-align: center;
-  color: #F5F5F5;
-  text-shadow: -1.5px -1.5px 0 #000,  
-               1.5px -1.5px 0 #000,
-              -1.5px 1.5px 0 #000,
-               1.5px 1.5px 0 #000;  
+  color: #f5f5f5;
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
 }
 
 .hero-text h1 {
@@ -154,15 +152,15 @@ Loading
 }
 
 .hero-text a {
-  text-decoration: none; 
+  text-decoration: none;
   color: white;
   border: 2px solid whitesmoke;
   padding: 10px 20px;
-  transition: .3;
+  transition: 0.3;
   text-align: center;
   display: inline-block;
   min-width: 44px;
-  min-height: 44px
+  min-height: 44px;
 }
 
 .hero-text a:hover {
@@ -174,7 +172,7 @@ Loading
 /*
   Main Content
 */
- 
+
 .list_item {
   border: 1px solid black;
   width: 30%;
@@ -184,7 +182,6 @@ Loading
   box-sizing: border-box;
   height: 100%;
 }
-
 
 .list_item_thumb {
   width: 100%;
@@ -201,16 +198,16 @@ Loading
   min-width: 44px;
   min-height: 44px;
   font-size: 24px;
-  color: #666; 
-  text-decoration: none; 
+  color: #666;
+  text-decoration: none;
 }
 
 .list_item_title:hover,
 .list_item_title:focus {
- font-size: 30px;
- color: #000;
- transition: font-size 0.3s;
-}   
+  font-size: 30px;
+  color: #000;
+  transition: font-size 0.3s;
+}
 
 .list_item_rating {
   color: #333;
@@ -221,7 +218,7 @@ Loading
   font-size: 20px;
 }
 
-.list_item_rating_value{
+.list_item_rating_value {
   display: inline-block;
   min-width: 44px;
   min-height: 44px;
@@ -236,8 +233,8 @@ Loading
 }
 
 .list_item_desc {
-  font-size: 16px; 
-  color: #555; 
+  font-size: 16px;
+  color: #555;
 }
 
 /*
@@ -263,7 +260,6 @@ Loading
   max-width: 80%;
   margin: 0 auto;
 }
-
 
 .restaurant-detail__image {
   max-width: 60%;
@@ -306,13 +302,12 @@ Loading
 }
 
 .restaurant-detail__menu::after {
-  content: '';
+  content: "";
   border-bottom: 1px solid #ccc;
   width: 100%;
   margin-top: 20px;
   display: block;
 }
-
 
 .restaurant-detail__reviews {
   display: grid;
@@ -328,7 +323,6 @@ Loading
   border-radius: 5px;
 }
 
-
 /*
   Like
 */
@@ -340,13 +334,13 @@ Loading
   align-items: center;
   justify-content: center;
   background-color: #db0000;
-  
+
   position: fixed;
   bottom: 16px;
   right: 16px;
   border-radius: 50%;
   border: 0;
-  
+
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -355,16 +349,16 @@ Loading
 /*
   Footer
 */
- 
+
 footer {
   padding: 16px;
 }
- 
+
 footer p {
   text-align: center;
   color: #aaaaaa;
 }
- 
+
 footer p a {
   color: #db0000;
   text-decoration: none;
@@ -383,7 +377,7 @@ footer p a {
   padding: 8px;
   z-index: 100;
 }
- 
+
 .skip-link:focus {
-   top: 0;
+  top: 0;
 }
