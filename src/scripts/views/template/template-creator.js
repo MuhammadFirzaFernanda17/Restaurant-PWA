@@ -4,7 +4,7 @@ import { getRatingHTML } from "../../utils/rating-stars.js";
 const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant-detail">
       <h2 class="restaurant-detail__name">${restaurant.name}</h2>
-      <img class="restaurant-detail__image" src="${RestaurantSource.getRestaurantImageUrl(
+      <img class="restaurant-detail__image lazyload" data-src="${RestaurantSource.getRestaurantImageUrl(
         restaurant.pictureId,
         "medium"
       )}" alt="${restaurant.name}" />
@@ -49,7 +49,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
 <div class="list_item">
-  <img class="list_item_thumb" src="${RestaurantSource.getRestaurantImageUrl(
+  <img class="list_item_thumb lazyload" src="${RestaurantSource.getRestaurantImageUrl(
     restaurant.pictureId
   )}" alt="${restaurant.name}" title="${restaurant.name}">
   <div class="list_item_content">
